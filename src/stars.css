@@ -1,0 +1,65 @@
+#stars {
+  width: 1px;
+  height: 1px;
+  display: block;
+  background: transparent;
+
+  animation: animStar 50s linear infinite;
+}
+#stars:after {
+  content: " ";
+  position: absolute;
+  left: -2000px;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+}
+
+#stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+
+  animation: animStar 100s linear infinite;
+}
+#stars2:after {
+  content: " ";
+  position: absolute;
+  left: -2000px;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+}
+
+#stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+
+  animation: animStar 150s linear infinite;
+}
+#stars3:after {
+  content: " ";
+  position: absolute;
+  left: -2000px;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 1034px 1997px #000, 278px 1953px #000, 473px 267px #000,
+    203px 397px #000, 361px 612px #000, 1863px 1403px #000, 1430px 1150px #000,
+    447px 340px #000, 1943px 946px #000, 1301px 831px #000, 1904px 584px #000,
+    198px 637px #000, 906px 283px #000, 1671px 18px #000, 1741px 1914px #000,
+    612px 833px #000, 1149px 1874px #000, 97px 1814px #000, 1613px 1466px #000,
+    496px 724px #000, 768px 1216px #000;
+}
+
+/* Animation */
+
+@keyframes animStar {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(1000px);
+  }
+}
