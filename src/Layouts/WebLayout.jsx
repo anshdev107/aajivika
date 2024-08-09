@@ -76,28 +76,32 @@ const WebLayout = ({ children }) => {
               <IconPlayerPlayFilled className="h-10 w-10 text-white" />
             </div>
           </button>
-          <div className="absolute animate__animated animate__pulse animate__infinite	 hidden lg:block lg:top-60 left-0 xl:left-5 2xl:left-16 2xl:top-60 ">
-            <img
-              src={manLaptopVideo}
-              className="w-52 lg:w-3/6 xl:w-3/5 2xl:w-4/5"
-              alt="astronaut"
-            />
+          <div className="absolute animate__animated animate__fadeInTopLeft	 hidden lg:block lg:top-60 left-0 xl:left-5 2xl:left-16 2xl:top-60 ">
+            <div className="animate__animated animate__bounce animate__infinite">
+              <img
+                src={manLaptopVideo}
+                className="w-52 lg:w-3/6 xl:w-3/5 2xl:w-4/5"
+                alt="astronaut"
+              />
+            </div>
           </div>
-          <div className="absolute animate__animated animate__flash animate__slow  animate__infinite hidden lg:block lg:top-56 xl:top-48 lg:right-10 2xl:top-80 2xl:right-40">
-            <img
-              src={vrboxImg}
-              className="w-52 xl:w-80 2xl:w-96"
-              alt="astronaut"
-            />
+          <div className="absolute animate__animated animate__fadeInTopRight hidden lg:block lg:top-56 xl:top-48 lg:right-10 2xl:top-80 2xl:right-40">
+          <div className="animate__animated animate__flash animate__slow  animate__infinite">
+              <img
+                src={vrboxImg}
+                className="w-52 xl:w-80 2xl:w-96"
+                alt="astronaut"
+              />
+            </div>
           </div>
         </div>
-        <section class="wrapper">
+        <section className="wrapper">
           <div id="stars"></div>
           <div id="stars2"></div>
           <div id="stars3"></div>
         </section>
       </div>
-      <div className="mt-44">{children}</div>
+      <div className="">{children}</div>
     </div>
   );
 };

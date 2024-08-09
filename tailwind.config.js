@@ -21,6 +21,9 @@ module.exports = {
         fadein: "fade-in 1s ease-in-out 0.04s infinite",
       },
     },
+    fontFamily: {
+      chakra: ["Chakra Petch"],
+    },
   },
   plugins: [],
 };
